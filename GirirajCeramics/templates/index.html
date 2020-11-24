@@ -1,0 +1,54 @@
+{%extends 'blog/basic.html'%}
+{% block body %}
+{% load static %}
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1>Welcome to Giriraj Ceramics</h1>
+          <p class="lead text-muted">Looking at the rising number of Covid-19 cases, we have decided to offer our customers an online service where they can buy products at the same price as shop. They can also read updates to know about something new or new offers.</p>
+          <p>
+            <a href="/shop/" class="btn btn-primary my-1">Shop Online</a>
+            <a href="/blog/" class="btn btn-secondary my-1">Read Updates</a>
+          </p>
+        </div>
+      </section>
+    
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Shop With Us</strong>
+              <h3 class="mb-0">Giriraj Ceramics Online</h3>
+              <div class="mb-1 text-muted"></div>
+              <p class="card-text mb-auto">We care for our customers, so we have come up with this online shop for our customers from where people can buy products at the same price as shop.</p>
+              <a href="/shop/" class="stretched-link mt-3">Shop Now</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="{% static '/shop/cart-home.png' %}" class="bd-placeholder-img" width="150" height="175" aria-label="Placeholder: Thumbnail"><title>Placeholder</title>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Read Updates</strong>
+              <h3 class="mb-0">Read our Blog</h3>
+              <div class="mb-1 text-muted"></div>
+              <p class="mb-auto">Read about any updates from Giriraj Ceramics at the Blog and know more about available offers. You can also like, comment and share the blogs that you like.</p>
+              <a href="/blog/" class="stretched-link mt-3">Read Blog</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="{% static '/shop/faq.png' %}" class="bd-placeholder-img" width="150" height="175" aria-label="Placeholder: Thumbnail">                    <title>Placeholder</title>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  {% endblock %}
